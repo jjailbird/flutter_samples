@@ -3,6 +3,8 @@ import '../models/item_model.dart';
 import '../blocs/movies_bloc.dart';
 
 class MovieList extends StatelessWidget {
+  const MovieList({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     bloc.fetchAllMovies();

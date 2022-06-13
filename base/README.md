@@ -1,4 +1,4 @@
-# bloc
+# worldclock
 
 A new Flutter project.
 
@@ -15,14 +15,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## [TMDB](https://www.themoviedb.org/signup)
-
-id: jjailbird
-pwd: RTvbr.HdANqC9ge
-email: jjailbird@gmail.com
-
-## [BLOC 패턴을 사용한 Flutter 프로젝트 아키텍쳐 설계](https://booiljung.github.io/technical_articles/flutter/state_management/architecture_your_flutter_project_using_bloc_pattern.html)
-
-- [POJO(Plain Old Java Object)란?](https://doing7.tistory.com/81)
-
-- [Flutter RxDart 이해하기](https://martinhongsw.medium.com/flutter-rxdart-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-37642e00c6ac)
+[Open Flutter Project: E-commerce App](https://medium.com/@openflutterproject/open-flutter-project-e-commerce-app-fe97570a633)
