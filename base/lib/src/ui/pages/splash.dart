@@ -1,5 +1,6 @@
+// https://www.youtube.com/watch?v=XXISgdYHdYw&t=355s
 import 'package:flutter/material.dart';
-
+import 'package:base/src/ui/pages/home.dart';
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
@@ -8,6 +9,19 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
+  
+  @override
+  void initState() {
+    super.initState();
+    _gotoHome();
+  }
+
+  _gotoHome() async {
+    await Future.delayed(const Duration(milliseconds: 5500), (){});
+    // ignore: use_build_context_synchronously
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const Home()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:worldclock/src/app.dart';
+import 'package:base/src/app.dart';
 
 void main() {
   runApp(const App());

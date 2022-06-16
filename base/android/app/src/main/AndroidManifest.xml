@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.worldclock">
+    package="com.example.base">
    <application
         android:label="base"
         android:name="${applicationName}"
