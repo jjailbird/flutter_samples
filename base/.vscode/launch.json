@@ -7,7 +7,16 @@
     {
       "name": "base",
       "request": "launch",
-      "type": "dart"
+      "type": "dart",
+    },
+    {
+      "name": "base (web)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-hostname",
+        "127.0.0.1"
+      ]
     },
     {
       "name": "base (profile mode)",

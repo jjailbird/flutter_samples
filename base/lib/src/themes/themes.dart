@@ -11,7 +11,7 @@ final carrotTheme = ThemeData(
   ),
 );
 
-const seedColor = Color(0xff00ffff);
+const seedColor = Colors.white;
 
 ThemeData getMd3Dark(BuildContext context) {
   return ThemeData(
@@ -24,7 +24,7 @@ ThemeData getMd3Dark(BuildContext context) {
 ThemeData getDefaultTheme(BuildContext context) {
   return ThemeData(
       colorSchemeSeed: seedColor,
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
       textTheme: GoogleFonts.notoSansNKoTextTheme(Theme.of(context).textTheme));
 }
 
