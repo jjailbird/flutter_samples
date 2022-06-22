@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
-const String google_api_key = "APIKEY";
-const MOBILE_WIDTH = 800;
+const String googleApiKey = "APIKEY";
+const int mobileWidth = 800;
