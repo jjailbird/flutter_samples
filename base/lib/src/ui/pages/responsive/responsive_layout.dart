@@ -2,7 +2,7 @@
 // https://worship.agency/mobile-screen-sizes-for-2022-based-on-data-from-2021
 
 import 'package:flutter/material.dart';
-import 'package:base/src/ui/pages/responsive/dimensions.dart';
+import 'package:base/src/constants.dart';
 
 class Responsivelayout extends StatelessWidget {
   final Widget mobileBody;
