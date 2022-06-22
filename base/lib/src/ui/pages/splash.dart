@@ -1,6 +1,6 @@
 // https://www.youtube.com/watch?v=XXISgdYHdYw&t=355s
 import 'package:flutter/material.dart';
-import 'package:base/src/ui/pages/home.dart';
+// import 'package:base/src/ui/pages/home.dart';
 import 'package:base/src/ui/pages/homeResponsive.dart';
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
