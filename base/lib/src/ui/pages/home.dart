@@ -5,13 +5,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Container(
-          child: const Text(
-            'Home Screen',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
+        child: Text(
+          'Home Screen',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       ),
     );
