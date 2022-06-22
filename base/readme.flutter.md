@@ -173,4 +173,6 @@ flutter devices
 
 [Dotenv](https://pub.dev/packages/flutter_dotenv)
 
+[Project rename](https://pub.dev/packages/rename)
+
 [Flutter Google Map With Live Location Tracking](https://www.youtube.com/watch?v=B9hsWOCXb_o)
