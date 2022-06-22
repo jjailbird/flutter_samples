@@ -122,6 +122,43 @@ start ms-settings:developers
 
 - Mac ox App Store 업데이트 진행율 확인 방법: 응용프로그램>콘솔> "App Store"로 검색 시작 > Fraction Completed: 0.7570 -> 75% 진행
 
+## [Flutter Command-Line tool](https://docs.flutter.dev/reference/flutter-cli)
+
+### [터미널 기반 Flutter 개발환경](https://www.joinc.co.kr/w/man/12/flutter/terminal)
+
+```bash
+# Here’s how you might use the flutter tool to create, analyze, test, and run an app:
+flutter create my_app
+cd my_app
+flutter analyze
+flutter test
+flutter run lib/main.dart
+
+# To run pub commands using the flutter tool:
+flutter pub get
+flutter pub outdated
+flutter pub upgrade
+
+# Clean up related build, packages and etc.
+flutter clean .
+
+# Clean up dart processes
+killall -9 dart # mac, linux
+taskkill /F /IM dart.exe # windows
+
+# List up emulators
+flutter emulators
+
+# Run emulator
+flutter emulators --launch flutter_emulator_2
+
+
+# Check connected device
+flutter devices
+
+
+```
+
 ## References
 
 [Material Icons](https://fonts.google.com/icons?selected=Material+Icons)

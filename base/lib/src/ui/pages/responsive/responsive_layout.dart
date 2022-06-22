@@ -2,6 +2,7 @@
 // https://worship.agency/mobile-screen-sizes-for-2022-based-on-data-from-2021
 
 import 'package:flutter/material.dart';
+import 'package:base/src/ui/pages/responsive/dimensions.dart';
 
 class Responsivelayout extends StatelessWidget {
   final Widget mobileBody;
@@ -14,7 +15,7 @@ class Responsivelayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 800) {
+        if (constraints.maxWidth < MOBILE_WIDTH) {
           return mobileBody;
         } else {
           return desktopBody;
