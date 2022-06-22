@@ -172,3 +172,5 @@ flutter devices
 [Reading configuration files and settings in Flutter and Dart](https://suragch.medium.com/reading-configuration-files-and-settings-in-flutter-and-dart-cc14bbd93698)
 
 [Dotenv](https://pub.dev/packages/flutter_dotenv)
+
+[Flutter Google Map With Live Location Tracking](https://www.youtube.com/watch?v=B9hsWOCXb_o)
