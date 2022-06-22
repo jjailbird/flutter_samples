@@ -1,3 +1,3 @@
 
 const String googleApiKey = "APIKEY";
-const int mobileWidth = 800;
+const int mobileMaxWidth = 800;

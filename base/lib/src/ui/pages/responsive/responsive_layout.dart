@@ -7,7 +7,6 @@ import 'package:base/src/constants.dart';
 class Responsivelayout extends StatelessWidget {
   final Widget mobileBody;
   final Widget desktopBody;
-
   
   const Responsivelayout({Key? key, required this.desktopBody, required this.mobileBody}) : super(key: key);
 
@@ -15,7 +14,7 @@ class Responsivelayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < mobileWidth) {
+        if (constraints.maxWidth < mobileMaxWidth) {
           return mobileBody;
         } else {
           return desktopBody;
