@@ -110,6 +110,8 @@ void someFunc(int? a,{required int b}){} //가능
 
 - Vscode에서 코드 어시스턴트 기능 단축키 [crtl]+[.]
 
+- [VS Code Extensions Every FLUTTER Developer Should Have](https://resocoder.com/2019/07/04/vs-code-extensions-every-flutter-developer-should-have/)
+
 - [DevTools - (1) Flutter Inspector](https://mike123789-dev.tistory.com/entry/%ED%94%8C%EB%9F%AC%ED%84%B0-DevTools-1-Flutter-Inspector)
 
 - [Flutter앱을 실제 iPhone에서 테스트하기 위해 필요한 설정](https://sy34.net/flutteraebeul-silje-iphoneeseo-teseuteuhagi-wihae-pilyohan-seoljeong/)
@@ -119,6 +121,8 @@ void someFunc(int? a,{required int b}){} //가능
 ```cmd
 start ms-settings:developers
 ```
+
+
 
 - Mac ox App Store 업데이트 진행율 확인 방법: 응용프로그램>콘솔> "App Store"로 검색 시작 > Fraction Completed: 0.7570 -> 75% 진행
 
