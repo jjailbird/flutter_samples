@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 // import 'package:base/src/ui/pages/home.dart';
 import 'package:base/src/ui/pages/homeResponsive.dart';
+import 'package:base/src/ui/pages/map/orderTracking.dart';
+
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
@@ -18,20 +20,18 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   _gotoHome() async {
-    await Future.delayed(const Duration(milliseconds: 5500), (){});
+    await Future.delayed(const Duration(milliseconds: 1500), (){});
     // ignore: use_build_context_synchronously
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const HomeResponsive()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const OrderTrakingPage()));
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Container(
-          child: const Text(
-            'Splash Screen',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ), 
+        child: Text(
+          'Splash Screen',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       ),
     );
