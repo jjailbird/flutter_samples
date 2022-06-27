@@ -122,7 +122,7 @@ void someFunc(int? a,{required int b}){} //가능
 start ms-settings:developers
 ```
 
-
+- Google map api 중 direction api 는 한국에서 동작하지 않음!!!
 
 - Mac ox App Store 업데이트 진행율 확인 방법: 응용프로그램>콘솔> "App Store"로 검색 시작 > Fraction Completed: 0.7570 -> 75% 진행
 
