@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 // import 'package:base/src/ui/pages/home.dart';
 import 'package:base/src/ui/pages/homeResponsive.dart';
-import 'package:base/src/ui/pages/map/orderTracking.dart';
+import 'package:base/src/ui/pages/map/orderTrackingGoogleMap.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   _gotoHome() async {
     await Future.delayed(const Duration(milliseconds: 1500), (){});
     // ignore: use_build_context_synchronously
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const OrderTrakingPage()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const HomeResponsive()));
   }
 
   @override

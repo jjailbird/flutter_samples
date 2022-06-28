@@ -6,14 +6,14 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:base/src/constants.dart';
 import 'package:location/location.dart';
 
-class OrderTrakingPage extends StatefulWidget {
-  const OrderTrakingPage({Key? key}) : super(key: key);
+class OrderTrakingGoogleMapPage extends StatefulWidget {
+  const OrderTrakingGoogleMapPage({Key? key}) : super(key: key);
 
   @override
-  State<OrderTrakingPage> createState() => _OrderTrakingPageState();
+  State<OrderTrakingGoogleMapPage> createState() => _OrderTrakingGoogleMapPageState();
 }
 
-class _OrderTrakingPageState extends State<OrderTrakingPage> {
+class _OrderTrakingGoogleMapPageState extends State<OrderTrakingGoogleMapPage> {
   final Completer<GoogleMapController> _controller = Completer();
   // Set<Marker> markers = {};
 
