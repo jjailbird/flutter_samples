@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:base/src/ui/pages/responsive/responsive_layout.dart';
-import 'package:base/src/ui/pages/responsive/mobile_body.dart';
-import 'package:base/src/ui/pages/responsive/desktop_body.dart';
+import 'package:base/src/ui/pages/responsive_layout/responsive_layout.dart';
+import 'package:base/src/ui/pages/responsive_layout/mobile_body.dart';
+import 'package:base/src/ui/pages/responsive_layout/desktop_body.dart';
 
 class HomeResponsive extends StatefulWidget {
   const HomeResponsive({Key? key}) : super(key: key);

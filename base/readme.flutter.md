@@ -47,6 +47,8 @@ void someFunc(int? a,{required int b}){} //가능
 
 ## Flutter Layout
 
+### [Layouts in Flutter](https://docs.flutter.dev/development/ui/layout)
+
 ### [Row & Column Widgets](https://medium.com/flutter-korea/row-column-widgets-8c1ff09a6219)
 
 - Row: 수평 / Column: 수직
@@ -106,6 +108,8 @@ void someFunc(int? a,{required int b}){} //가능
 
 ## Tips
 
+- 플러터 컴포넌트 가이드 보이기 설정 > Dart: Preview Flutter Ui Guides
+
 - 위젯 배열 속성, 파라미터는 ","로 끝내고 자동 정렬 단축키 (vscode:[shift] + [alt] + [f])
 
 - Vscode에서 코드 어시스턴트 기능 단축키 [crtl]+[.]
@@ -124,7 +128,22 @@ start ms-settings:developers
 
 - Google map api 중 direction api 는 한국에서 동작하지 않음!!!
 
+- [Google Maps Platform 사용 범위 세부정보](https://developers.google.com/maps/coverage?hl=ko)
+
 - Mac ox App Store 업데이트 진행율 확인 방법: 응용프로그램>콘솔> "App Store"로 검색 시작 > Fraction Completed: 0.7570 -> 75% 진행
+
+### Android 패키지명 확인
+
+```xml
+android/app/src/main/AndroidManifest.xml
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.naver_map_test">
+.
+.
+.
+</manifest>
+```
 
 ## [Flutter Command-Line tool](https://docs.flutter.dev/reference/flutter-cli)
 
@@ -180,3 +199,17 @@ flutter devices
 [Project rename](https://pub.dev/packages/rename)
 
 [Flutter Google Map With Live Location Tracking](https://www.youtube.com/watch?v=B9hsWOCXb_o)
+
+[Kakao-map-flutter with webview](https://github.com/note11g/Kakao-Map-Flutter)
+
+[Key란 무엇인가?](https://nsinc.tistory.com/214)
+
+[scaffoldKey가 왜 필요한가? 어떨때 쓰이는가?](https://softwarefactory-thinker.tistory.com/66?category=946329)
+
+[Dart extensions](https://diamantidis.github.io/2020/07/07/dart-extensions-flatten-flutter-nested-widget-trees)
+
+## With Native code
+
+[Writing custom platform-specific code: flatform channels](https://docs.flutter.dev/development/platform-integration/platform-channels?tab=type-mappings-swift-tab)
+
+[Integrating third-party native SDKs in Flutter]https://www.solutelabs.com/blog/integrating-third-party-native-sdks-in-flutter)

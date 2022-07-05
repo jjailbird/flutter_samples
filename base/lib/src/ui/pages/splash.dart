@@ -1,11 +1,11 @@
-// https://www.youtube.com/watch?v=XXISgdYHdYw&t=355s
+// splash screen https://www.youtube.com/watch?v=XXISgdYHdYw&t=355s
+
 import 'package:flutter/material.dart';
-// import 'package:base/src/ui/pages/home.dart';
-import 'package:base/src/ui/pages/homeResponsive.dart';
-import 'package:base/src/ui/pages/map/orderTrackingGoogleMap.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({Key? key}) : super(key: key);
+  final Widget home;
+  
+  const SplashPage({Key? key, required this.home}) : super(key: key);
 
   @override
   State<SplashPage> createState() => _SplashPageState();
@@ -22,11 +22,12 @@ class _SplashPageState extends State<SplashPage> {
   _gotoHome() async {
     await Future.delayed(const Duration(milliseconds: 1500), (){});
     // ignore: use_build_context_synchronously
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const HomeResponsive()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> widget.home ));
   }
 
   @override
   Widget build(BuildContext context) {
+    
     return const Scaffold(
       body: Center(
         child: Text(

@@ -5,6 +5,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
+    Size _size = MediaQuery.of(context).size;
+
     return const Scaffold(
       body: Center(
         child: Text(
