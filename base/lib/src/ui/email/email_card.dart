@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:base/src/models/email.dart';
 import 'package:base/src/constants.dart';
-import 'package:base/src/ui/extensions_widget.dart';
+import 'package:base/src/ui/extension_widget.dart';
 
 class EmailCard extends StatelessWidget {
   final bool isActive;
