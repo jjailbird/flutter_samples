@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import '../../constants.dart';
 import '../extension_widget.dart';
 
-class BadgeCounter extends StatelessWidget {
+class CounterBadge extends StatelessWidget {
   final int count;
 
-  const BadgeCounter({Key? key, required this.count}) : super(key: key);
+  const CounterBadge({Key? key, required this.count}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

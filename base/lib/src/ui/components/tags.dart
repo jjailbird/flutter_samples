@@ -54,25 +54,23 @@ class Tags extends StatelessWidget {
 
 Widget buildTag(BuildContext context,
     {required Color color, required String title}) {
-  return Material(
-    child: InkWell(
-      onTap: () {},
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(paddingDefault * 1.5, 10, 0, 10),
-        child: Row(
-          children: [
-            WebsafeSvg.asset("assets/images/icons/Markup filled.svg",
-                height: 18, color: color),
-            const SizedBox(width: paddingDefault / 2),
-            Text(
-              title,
-              style: Theme.of(context)
-                  .textTheme
-                  .button
-                  ?.copyWith(color: colorGray),
-            )
-          ],
-        ),
+  return InkWell(
+    onTap: () {},
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(paddingDefault * 1.5, 10, 0, 10),
+      child: Row(
+        children: [
+          WebsafeSvg.asset("assets/images/icons/Markup filled.svg",
+              height: 18, color: color),
+          const SizedBox(width: paddingDefault / 2),
+          Text(
+            title,
+            style: Theme.of(context)
+                .textTheme
+                .button
+                ?.copyWith(color: colorGray),
+          )
+        ],
       ),
     ),
   );

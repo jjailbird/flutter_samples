@@ -132,6 +132,13 @@ start ms-settings:developers
 
 - Mac ox App Store 업데이트 진행율 확인 방법: 응용프로그램>콘솔> "App Store"로 검색 시작 > Fraction Completed: 0.7570 -> 75% 진행
 
+- "No Material widget found" 에러 대처 방법: Material 위젯 사용
+
+```dart
+Material(child: CloseButton())
+
+```
+
 ### Android 패키지명 확인
 
 ```xml
@@ -208,8 +215,11 @@ flutter devices
 
 [Dart extensions](https://diamantidis.github.io/2020/07/07/dart-extensions-flatten-flutter-nested-widget-trees)
 
+[Material Design 3](https://m3.material.io/)
+
 ## With Native code
 
 [Writing custom platform-specific code: flatform channels](https://docs.flutter.dev/development/platform-integration/platform-channels?tab=type-mappings-swift-tab)
 
 [Integrating third-party native SDKs in Flutter]https://www.solutelabs.com/blog/integrating-third-party-native-sdks-in-flutter)
+
