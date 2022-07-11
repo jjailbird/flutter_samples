@@ -32,47 +32,53 @@ List<Email> emails = List.generate(
 List demoData = [
   {
     "name": "Apple",
-    "image": "assets/images/user_1.png",
+    "image": "assets/images/emails/user_1.png",
     "subject": "iPhone 12 is here",
     "isAttachmentAvailable": false,
     "isChecked": true,
     "tagColor": null,
-    "time": "Now"
+    "time": "Now",
+    "body": "1. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed"
   },
   {
     "name": "Elvia Atkins",
-    "image": "assets/images/user_2.png",
+    "image": "assets/images/emails/user_2.png",
     "subject": "Inspiration for our new home",
     "isAttachmentAvailable": true,
     "isChecked": false,
     "tagColor": null,
-    "time": "15:32"
+    "time": "15:32",
+    "body": "2. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed"
   },
   {
     "name": "Marvin Kiehn",
-    "image": "assets/images/user_3.png",
+    "image": "assets/images/emails/user_3.png",
     "subject": "Business-focused empowering the world",
     "isAttachmentAvailable": true,
     "isChecked": false,
     "tagColor": null,
     "time": "14:27",
+    "body": "3. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed",
   },
   {
     "name": "Domenic Bosco",
-    "image": "assets/images/user_4.png",
+    "image": "assets/images/emails/user_4.png",
     "subject": "The fastest way to Design",
     "isAttachmentAvailable": false,
     "isChecked": true,
     "tagColor": const Color(0xFF23CF91),
-    "time": "10:43"
+    "time": "10:43",
+    "body": "4. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed"
   },
   {
     "name": "Elenor Bauch",
-    "image": "assets/images/user_5.png",
+    "image": "assets/images/emails/user_5.png",
     "subject": "New job opportunities",
     "isAttachmentAvailable": false,
     "isChecked": false,
     "tagColor": const Color(0xFF3A6FF7),
-    "time": "9:58"
+    "time": "9:58",
+    "body": "5. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed. Corporis illo provident. Sunt omnis neque et aperiam. Nemo ut dolorum fugit eum sed"
   }
 ];
+

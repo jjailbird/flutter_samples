@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:base/src/themes/themes.dart';
 // import 'package:base/src/ui/pages/splash.dart';
 
+import 'package:base/src/ui/pages/homeEmail.dart';
+
 // Test widget =================================================
-import 'package:base/src/ui/email/email_card.dart';
-import 'package:base/src/ui/components/tags.dart';
-import 'package:base/src/ui/components/menu_side_item.dart';
-import 'package:base/src/ui/components/menu_side.dart';
-import 'package:base/src/ui/email/email_list.dart';
+// import 'package:base/src/ui/email/email_card.dart';
+// import 'package:base/src/ui/components/tags.dart';
+// import 'package:base/src/ui/components/menu_side_item.dart';
+// import 'package:base/src/ui/components/menu_side.dart';
+// import 'package:base/src/ui/email/email_list.dart';
 
 // import 'package:base/src/ui/pages/homeResponsive.dart';
 // =============================================================
@@ -28,7 +30,7 @@ class App extends StatelessWidget {
         //   title: "Sent",
         //   press: () {},
         // );
-        home: const EmailList()
+        home: const HomeEmail()
     );
   }
 }

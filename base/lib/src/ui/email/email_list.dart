@@ -1,20 +1,26 @@
-import 'package:base/src/ui/components/menu_side.dart';
-import 'package:base/src/ui/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:websafe_svg/websafe_svg.dart';
-
-import '../../constants.dart';
-import 'email_card.dart';
-
 import 'package:flutter/foundation.dart' show kIsWeb;
 
+// import '../../constants.dart';
+// import '../../models/email.dart';
+// import '../responsive.dart';
+// import '../components/menu_side.dart';
+// import 'email_card.dart';
+// import 'email_screen.dart';
+
+import 'package:base/src/constants.dart';
+import 'package:base/src/models/email.dart';
+import 'package:base/src/ui/responsive.dart';
+import 'package:base/src/ui/components/menu_side.dart';
+import 'package:base/src/ui/email/email_card.dart';
+import 'package:base/src/ui/email/email_screen.dart';
 class EmailList extends StatefulWidget {
   const EmailList({Key? key}) : super(key: key);
 
   @override
   State<EmailList> createState() => _EmailListState();
 }
-
 class _EmailListState extends State<EmailList> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -65,7 +71,9 @@ class _EmailListState extends State<EmailList> {
                 ),
               ]),
             ),
-            const SizedBox(height: paddingDefault,),
+            const SizedBox(
+              height: paddingDefault,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: paddingDefault),
               child: Row(
@@ -84,15 +92,30 @@ class _EmailListState extends State<EmailList> {
                   MaterialButton(
                     minWidth: 20,
                     onPressed: () {},
-                    child: WebsafeSvg.asset(
-                      "assets/images/icons/Sort.svg",
-                      width: 16
-                    ),
+                    child: WebsafeSvg.asset("assets/images/icons/Sort.svg",
+                        width: 16),
                   ),
                 ],
               ),
             ),
             const SizedBox(height: paddingDefault),
+            Expanded(
+              child: ListView.builder(
+                itemCount: emails.length,
+                itemBuilder: (context, index) => EmailCard(
+                  isActive: Responsive.isMobile(context) ? false : index == 0,
+                  email: emails[index],
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => EmailScreen(email: emails[index]),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            )
           ],
         ),
       ),

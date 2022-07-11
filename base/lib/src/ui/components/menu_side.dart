@@ -28,20 +28,20 @@ class SideMenu extends StatelessWidget {
                 children: [
                   Image.asset(
                     "assets/images/emails/Logo Outlook.png",
-                    width: 46,
+                    width: Responsive.isMobile(context) ? 30 : 46,
                   ),
                   const Spacer(),
                   if (!Responsive.isDesktop(context)) const CloseButton(),
                 ],
               ),
               // const Spacer(),
-              const SizedBox(
-                height: paddingDefault,
+              SizedBox(
+                height: Responsive.isMobile(context) ? paddingDefault / 2 : paddingDefault,
               ),
               FlatButton.icon(
                 minWidth: double.infinity,
-                padding: const EdgeInsets.symmetric(
-                  vertical: paddingDefault,
+                padding: EdgeInsets.symmetric(
+                  vertical: Responsive.isMobile(context) ? paddingDefault /2 : paddingDefault,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -58,7 +58,7 @@ class SideMenu extends StatelessWidget {
               topShadowColor: Colors.white,
               bottomShadowColor: const Color(0xFF234395).withOpacity(0.2),
             ),
-              const SizedBox(height: paddingDefault * 2),
+              SizedBox(height: Responsive.isMobile(context) ? paddingDefault : paddingDefault * 2),
               TextButton.icon(
                 onPressed: () {},
                 icon: WebsafeSvg.asset("assets/images/icons/Download.svg", width: 16),
@@ -72,7 +72,7 @@ class SideMenu extends StatelessWidget {
                     RoundedRectangleBorder(borderRadius: BorderRadius.circular(10),)
                   ),
                   padding: MaterialStateProperty.all<EdgeInsets>(
-                    const EdgeInsets.symmetric(vertical: paddingDefault)
+                    EdgeInsets.symmetric(vertical: Responsive.isMobile(context) ? paddingDefault/2 : paddingDefault)
                   ),
                   // Full width button
                   minimumSize: MaterialStateProperty.all<Size>(
@@ -83,7 +83,7 @@ class SideMenu extends StatelessWidget {
                 topShadowColor: Colors.white,
                 bottomShadowColor: const Color(0xFF234395).withOpacity(0.2),
               ),
-              const SizedBox(height: paddingDefault * 2),
+              SizedBox(height: Responsive.isMobile(context) ? paddingDefault /2 : paddingDefault),
               SideMenuItem(
                 press: () {},
                 title: "Inbox",
@@ -110,7 +110,7 @@ class SideMenu extends StatelessWidget {
                 isActive: false,
                 showBorder: false,
               ),
-              const SizedBox(height: paddingDefault * 2),
+              SizedBox(height: Responsive.isMobile(context) ? paddingDefault /2 : paddingDefault * 2),
               const Tags(),
             ],
           ),
