@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
-import '../../constants.dart';
-import '../responsive.dart';
+// import '../../constants.dart';
+// import '../responsive.dart';
+
+import 'package:base/src/constants.dart';
+import 'package:base/src/ui/responsive.dart';
 
 class EmailHeader extends StatelessWidget {
   const EmailHeader({Key? key}) : super(key: key);
@@ -13,7 +16,8 @@ class EmailHeader extends StatelessWidget {
       padding: const EdgeInsets.all(paddingDefault),
       child: Row(
         children: [
-          if (Responsive.isMobile(context)) const BackButton(),
+          // if (Responsive.isMobile(context)) const BackButton(),
+          const BackButton(),
           IconButton(
             icon: WebsafeSvg.asset(
               "assets/images/icons/Trash.svg",

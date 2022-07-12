@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
-import '../extension_widget.dart';
+import 'package:base/src/constants.dart';
+import 'package:base/src/ui/extension_widget.dart';
 
 class CounterBadge extends StatelessWidget {
   final int count;

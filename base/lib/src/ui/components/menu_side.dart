@@ -2,12 +2,12 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
-import '../../constants.dart';
-import '../extension_widget.dart';
-import '../responsive.dart';
+import 'package:base/src/constants.dart';
+import 'package:base/src/ui/responsive.dart';
+import 'package:base/src/ui/extension_widget.dart';
 
-import 'menu_side_item.dart';
-import 'tags.dart';
+import 'package:base/src/ui/components/menu_side_item.dart';
+import 'package:base/src/ui/components/tags.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
@@ -20,7 +20,6 @@ class SideMenu extends StatelessWidget {
       padding: const EdgeInsets.only(top: kIsWeb ? paddingDefault : 0),
       child: SafeArea(
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
           padding: const EdgeInsets.symmetric(horizontal: paddingDefault),
           child: Column(
             children: [

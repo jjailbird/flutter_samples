@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
-import '../../constants.dart';
-import 'badge_counter.dart';
+// import '../../constants.dart';
+// import 'badge_counter.dart';
+
+import 'package:base/src/constants.dart';
+import 'package:base/src/ui/components/badge_counter.dart';
 
 class SideMenuItem extends StatelessWidget {
   final bool isActive, isHover, showBorder;
