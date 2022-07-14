@@ -217,6 +217,8 @@ flutter devices
 
 [Material Design 3](https://m3.material.io/)
 
+[Modal에 관한 간단한 고찰](https://velog.io/@dnr6054/Modal%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%EA%B3%A0%EC%B0%B0)
+
 ## With Native code
 
 [Writing custom platform-specific code: flatform channels](https://docs.flutter.dev/development/platform-integration/platform-channels?tab=type-mappings-swift-tab)
