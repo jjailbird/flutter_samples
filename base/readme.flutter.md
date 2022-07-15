@@ -183,7 +183,12 @@ flutter emulators
 flutter emulators --launch flutter_emulator_2
 
 
-# Check connected device
+# Enable os desktop supports
+flutter config --enable-windows-desktop # for the Windows runner
+flutter config --enable-macos-desktop   # for the macOS runner
+flutter config --enable-linux-desktop   # for the Linux runner
+
+# Check supprted devices
 flutter devices
 
 
