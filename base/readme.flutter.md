@@ -120,10 +120,15 @@ void someFunc(int? a,{required int b}){} //가능
 
 - [Flutter앱을 실제 iPhone에서 테스트하기 위해 필요한 설정](https://sy34.net/flutteraebeul-silje-iphoneeseo-teseuteuhagi-wihae-pilyohan-seoljeong/)
 
-- Windows 개발자 모드 설정
+- Windows Tips
 
 ```cmd
+# Windows 개발자 모드 설정
 start ms-settings:developers
+
+# Windows show dynamic port
+netsh int ipv4 show dynamicport tcp
+
 ```
 
 - Google map api 중 direction api 는 한국에서 동작하지 않음!!!
