@@ -164,6 +164,9 @@ flutter analyze
 flutter test
 flutter run lib/main.dart
 
+# Specify platforms
+flutter create my_app --platforms=windows,macos,linux,web 
+
 # To run pub commands using the flutter tool:
 flutter pub get
 flutter pub outdated
@@ -191,6 +194,8 @@ flutter config --enable-linux-desktop   # for the Linux runner
 # Check supprted devices
 flutter devices
 
+# Run windows app 
+flutter run -d windows
 
 ```
 
@@ -223,6 +228,8 @@ flutter devices
 [Material Design 3](https://m3.material.io/)
 
 [Modal에 관한 간단한 고찰](https://velog.io/@dnr6054/Modal%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%EA%B3%A0%EC%B0%B0)
+
+[Flutter Desktop Application example](https://codelabs.developers.google.com/codelabs/flutter-github-client)
 
 ## With Native code
 

@@ -4,6 +4,7 @@ import 'package:base/src/ui/pages/splash.dart';
 import 'package:base/src/ui/pages/homeEmail.dart';
 import 'package:base/src/ui/Navigation/ReturnDataFromScreen.dart';
 import 'package:base/src/ui/Navigation/SendDataToNewScreen.dart';
+import 'package:base/src/ui/oauth/github_page.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -13,13 +14,14 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "Flutter Basic",
       theme: getDefaultTheme(context),
+      home: const GithubPage(title: 'Github Client'),
       // home: const SplashPage(home: HomeEmail()),
-      home: TodoScreen(
-        todos: List.generate(
-          20, 
-          (index) => Todo('Todo $index', 'A description of todo.$index')
-        )
-      ) 
+      // home: TodoScreen(
+      //   todos: List.generate(
+      //     20, 
+      //     (index) => Todo('Todo $index', 'A description of todo.$index')
+      //   )
+      // ) 
     );
   }
 }

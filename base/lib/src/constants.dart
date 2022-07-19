@@ -14,3 +14,8 @@ const colorTitleText = Color(0xFF30384D);
 const colorText = Color(0xFF4D5875);
 
 const paddingDefault = 20.0;
+
+// Github oauth app
+const githubClientId = '29178ad34c2153ce881a';
+const githubClientSecret = '0b5d63ddd57e1f88c38d82493f5635c196d95c82';
+const githubScopes = ['repo', 'read:org'];
