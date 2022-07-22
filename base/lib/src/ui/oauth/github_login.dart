@@ -50,7 +50,8 @@ class _GithubLoginWidgetState extends State<GithubLoginWidget> {
           child: const Text('Login to Github'),
           onPressed: () async {
             await _redirectServer?.close();
-            _redirectServer = await HttpServer.bind('localhost', 0);
+            // 'localhost' now working in windows !!!
+            _redirectServer = await HttpServer.bind('127.0.0.1', 0);
             var authenticatedHttpClient = await _getOAuth2Client(
               Uri.parse('http://localhost:${_redirectServer!.port}/auth')
             );
