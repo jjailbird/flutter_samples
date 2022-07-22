@@ -14,8 +14,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "Flutter Basic",
       theme: getDefaultTheme(context),
-      // home: const GithubPage(title: 'Github Client'),
-      home: const SplashPage(home: HomeEmail()),
+      home: const GithubPage(title: 'Github Client'),
+      // home: const SplashPage(home: HomeEmail()),
       // home: TodoScreen(
       //   todos: List.generate(
       //     20,

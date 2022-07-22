@@ -196,12 +196,25 @@ flutter config --enable-windows-desktop # for the Windows runner
 flutter config --enable-macos-desktop   # for the macOS runner
 flutter config --enable-linux-desktop   # for the Linux runner
 
+# Check current config
+flutter config 
+
 # Check supprted devices
 flutter devices
 
 # Run windows app 
 flutter run -d windows
 
+
+# Regenerate windows app
+rm -rf windows
+flutter create .
+
+
+# Build 
+flutter build windows
+flutter build apk
+flutter build web
 ```
 
 ## References
