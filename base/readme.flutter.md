@@ -255,3 +255,36 @@ flutter build web
 
 [Integrating third-party native SDKs in Flutter]https://www.solutelabs.com/blog/integrating-third-party-native-sdks-in-flutter)
 
+## Prevent Erros
+
+### ERR_CLEARTEXT_NOT_PERMITTED
+
+- androis/app/src/main/AndroidManifest.xml
+
+```xml
+<application
+...
+android:usesCleartextTraffic="true" />
+```
+
+### Enable networking
+
+- androis/app/src/main/AndroidManifest.xml
+
+```xml
+<manifest xmlns:android... >
+ ...
+ <uses-permission android:name="android.permission.INTERNET" />
+ <application .... />
+</manifest>
+```
+
+- macos/Runner/DebugProfile.entitlements
+- macos/Runner/Release.entitlements
+
+```xml
+<key>com.apple.security.network.server</key>
+<true/>
+<key>com.apple.security.network.client</key>
+<true/>
+```
